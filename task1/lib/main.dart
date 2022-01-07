@@ -15,15 +15,6 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       title: 'Flutter Demo',
       theme: ThemeData(
-        // This is the theme of your application.
-        //
-        // Try running your application with "flutter run". You'll see the
-        // application has a blue toolbar. Then, without quitting the app, try
-        // changing the primarySwatch below to Colors.green and then invoke
-        // "hot reload" (press "r" in the console where you ran "flutter run",
-        // or simply save your changes to "hot reload" in a Flutter IDE).
-        // Notice that the counter didn't reset back to zero; the application
-        // is not restarted.
         primarySwatch: Colors.blue,
       ),
       home: const MyHomePage(title: 'Quote Generator'),
@@ -35,15 +26,6 @@ class MyApp extends StatelessWidget {
 class MyHomePage extends StatefulWidget {
   const MyHomePage({Key? key, required this.title}) : super(key: key);
 
-  // This widget is the home page of your application. It is stateful, meaning
-  // that it has a State object (defined below) that contains fields that affect
-  // how it looks.
-
-  // This class is the configuration for the state. It holds the values (in this
-  // case the title) provided by the parent (in this case the App widget) and
-  // used by the build method of the State. Fields in a Widget subclass are
-  // always marked "final".
-
   final String title;
 
   @override
@@ -51,7 +33,7 @@ class MyHomePage extends StatefulWidget {
 }
 
 class _MyHomePageState extends State<MyHomePage> {
-  int _col = 0;
+  int _col = 5;
   int _row = 5;
 
   final List<AssetImage> background = [
@@ -69,37 +51,45 @@ class _MyHomePageState extends State<MyHomePage> {
         "Human history in essence is the history of ideas.",
         "The past is but the past of a beginning.",
         "If you fell down yesterday, stand up today.",
-        "The crisis of today is the joke of tomorrow."
+        "The crisis of today is the joke of tomorrow.",
+        "Click on the 'Get Quote' button to view a quote from that person"
       ],//H.G. Wells
       [
         "Alone we can do so little; together we can do so much.",
         "Keep your face to the sunshine and you cannot see a shadow.",
         "Although the world is full of suffering, it is also full of the overcoming of it.",
         "We can do anything we want to if we stick to it long enough.",
-        "The highest result of education is tolerance."
+        "The highest result of education is tolerance.",
+        "Click on the 'Get Quote' button to view a quote from that person"
       ],//Helen Keller
       [
         "Take care of the sense and the sounds will take care of themselves.",
         "Always speak the truth, think before you speak, and write it down afterwards.",
         "One of the secrets of life is that all that is really worth the doing is what we do for others.",
         "I can't go back to yesterday - because I was a different person then.",
-        "Which form of proverb do you prefer Better late than never, or Better never than late?"
+        "Which form of proverb do you prefer Better late than never, or Better never than late?",
+        "Click on the 'Get Quote' button to view a quote from that person"
       ],//Lewis Carroll
       [
         "It's not the size of the dog in the fight, it's the size of the fight in the dog.",
         "Age is an issue of mind over matter. If you don't mind, it doesn't matter.",
         "Do the thing you fear most and the death of fear is certain.",
         "When you fish for love, bait with your heart, not your brain.",
-        "Wrinkles should merely indicate where smiles have been."
+        "Wrinkles should merely indicate where smiles have been.",
+        "Click on the 'Get Quote' button to view a quote from that person"
       ],//Mark Twain
       [
         "Start with what is right rather than what is acceptable.",
         "Anyone who keeps the ability to see beauty never grows old.",
         "A first sign of the beginning of understanding is the wish to die.",
         "He who seeks does not find, but he who does not seek will be found.",
-        "Evil is whatever distracts."
+        "Evil is whatever distracts.",
+        "Click on the 'Get Quote' button to view a quote from that person"
       ],//Franz Kafka
-      ["To see a quote, please choose a figure and then press the 'Get Quote' button"]
+      [
+        "","","","","",
+        "To get a quote, please choose a figure and then after press the 'Get Quote' button"
+      ]
     ];
 
   @override
