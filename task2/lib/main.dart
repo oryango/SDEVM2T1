@@ -49,12 +49,12 @@ class _MyHomePageState extends State<MyHomePage> {
       backgroundColor: Color(0xFFFFFAF1),
       body: Center(
         child: Padding(
-          padding: const EdgeInsets.all(10.0),
+          padding: const EdgeInsets.all(8.0),
           child: Column(
             mainAxisAlignment: MainAxisAlignment.center,
             children: <Widget>[
               const Padding(
-                padding: EdgeInsets.all(10.0),
+                padding: EdgeInsets.all(5.0),
                 child: Text(
                   "Welcome!", 
                   style: TextStyle(
@@ -67,7 +67,7 @@ class _MyHomePageState extends State<MyHomePage> {
               ),
               const Padding(
                 padding: EdgeInsets.all(8.0),
-                child: Text("This is a calorie tracking application. Input your age and gender along with other information needed later on to get your daily calorie intake",
+                child: Text("This is a calorie tracking application. Select your age from the number picker (Only accepts 15 - 80)",
                   style: TextStyle(fontSize: 20,),
                   textAlign: TextAlign.justify,
                 ),
@@ -93,13 +93,14 @@ class _MyHomePageState extends State<MyHomePage> {
                   }),
                 ),
               ),
+              Text("Position the slider to your gender", style: TextStyle(fontSize: 20),),
               Row(
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: [
-                  const Icon(Icons.female_rounded, size: 65,),
+                  Icon(Icons.female_rounded, size: height.toDouble()/16,),
 
                   SizedBox(
-                    height: 70,
+                    height: height/16,
                     width: width/2,
                     child: Slider(
                       value: _genderVal, 
@@ -113,7 +114,7 @@ class _MyHomePageState extends State<MyHomePage> {
                     ),
                   ),
                   
-                  const Icon(Icons.male_rounded, size: 65,)
+                  Icon(Icons.male_rounded, size: height.toDouble()/16,)
                 ],
               ),
 

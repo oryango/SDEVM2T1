@@ -11,7 +11,7 @@ class Activity extends StatefulWidget {
 }
 
 class _ActivityState extends State<Activity> {
-  double _activity = 1.2001;
+  double _activity = 1.2;
 
 
   void buttonClick(double multiplier){
@@ -39,12 +39,12 @@ class _ActivityState extends State<Activity> {
             mainAxisAlignment: MainAxisAlignment.center,
             children: <Widget>[
               const Padding(
-                padding: EdgeInsets.all(8.0),
+                padding: EdgeInsets.all(4.0),
                 child:  Text("And finally...",
-                  style: TextStyle(fontSize: 50, fontWeight: FontWeight.bold),
+                  style: TextStyle(fontSize: 45, fontWeight: FontWeight.bold),
                 ),
               ),
-              Text((_activity!= 12.001)?"You have selected "+activityLevel[_activity].toString()+" activity":"Select your level of weekly activity.",
+              Text("You have selected "+activityLevel[_activity].toString()+" activity",
                 style: TextStyle(fontSize: 30,),
                 textAlign: TextAlign.center,
               ),
@@ -63,7 +63,7 @@ class _ActivityState extends State<Activity> {
                         onPressed: (){buttonClick(1.2);}, 
                         child: Column(
                           children: [
-                            Image(image: const AssetImage("assets/images/moderate.png"), height: 1/7*height,),
+                            Image(image: const AssetImage("assets/images/minimal.png"), height: 1/7*height,),
                             const Text("Minimal",style: TextStyle(color: Color(0xFF000000),fontSize: 25),)
                           ],
                         ),),

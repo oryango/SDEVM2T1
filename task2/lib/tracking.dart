@@ -44,13 +44,13 @@ class _TrackingState extends State<Tracking> {
               child: Text("Calories left today:",style: TextStyle(fontSize: 25,fontWeight: FontWeight.w700),),
             ),
             SizedBox(
-              height: 250,
+              height: height/3,
               child: Stack(
                 children: <Widget>[
                   Center(
                     child: SizedBox(
-                      width: 200,
-                      height: 200,
+                      width: height/4,
+                      height: height/4,
                       child: CircularProgressIndicator(
                         backgroundColor: Color(0xFFAAAAAA),
                         strokeWidth: 25,
